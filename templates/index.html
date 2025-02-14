@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <title>CancerVision AI</title>
+    <!--
+Elegance Template
+https://templatemo.com/tm-528-elegance
+-->
+    <!-- Additional CSS Files -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/font-awesome.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/fullpage.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/owl.carousel.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/animate.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/templatemo-style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/responsive.css') }}"
+    />
+  </head>
+
+  <body>
+    <div id="video">
+      <div class="preloader">
+        <div class="preloader-bounce">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <header id="header">
+        <div class="container-fluid">
+          <div class="navbar">
+            <a href="{{ url_for('home') }}" id="logo" title="CancerVision AI">
+              CancerVision AI
+            </a>
+            <div class="navigation-row">
+              <nav id="navigation">
+                <button type="button" class="navbar-toggle">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="nav-box navbar-collapse">
+                  <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                    <li data-menuanchor="slide01" class="active">
+                      <a href="#slide01">Home</a>
+                    </li>
+                    <li data-menuanchor="slide02">
+                      <a href="#slide02">Features</a>
+                    </li>
+                    <li data-menuanchor="slide03">
+                      <a href="#slide03">Predictive Model</a>
+                    </li>
+                    <li data-menuanchor="slide04">
+                      <a href="#slide04">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <video autoplay muted loop id="myVideo">
+        <source src="static/images/video_bg.mp4" type="video/mp4" />
+      </video>
+
+      <div id="fullpage" class="fullpage-default">
+        <div class="section animated-row" data-section="slide01">
+          <div class="section-inner">
+            <div class="welcome-box">
+              <span class="welcome-first animate" data-animate="fadeInUp"
+                >Hello, welcome to</span
+              >
+              <h1 class="welcome-title animate" data-animate="fadeInUp">
+                CancerVision AI
+              </h1>
+              <p class="animate" data-animate="fadeInUp">
+                A SWIN Transformer Based Model to Reinforce Medical Experts in
+                'Predicting Between Cancerous and Non-Cancerous Tumours'
+                detected in Female Breasts.
+              </p>
+              <div class="scroll-down next-section animate
+              data-animate="fadeInUp""><img
+                src="images/mouse-scroll.png"
+                alt=""
+              /><span>Scroll Down</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section animated-row" data-section="slide02">
+        <div class="section-inner">
+          <div class="about-section">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 wide-col-laptop">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="about-contentbox">
+                      <div class="animate" data-animate="fadeInUp">
+                        <span>About Application</span>
+                        <h2>Why CancerVision AI?</h2>
+                        <p>
+                          Our Web Application allows user to
+                          <strong>enhance the accuracy</strong> of diagnostics
+                          through
+                          <strong>advance Deep Learning Architectures</strong>.
+                        </p>
+                      </div>
+                      <div class="facts-list owl-carousel">
+                        <div class="item animate" data-animate="fadeInUp">
+                          <div class="counter-box">
+                            <i
+                              class="fa fa-trophy counter-icon"
+                              aria-hidden="true"
+                            ></i
+                            ><span class="count-number">High</span> Accuracy and
+                            Precise Predictions
+                          </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                          <div class="counter-box">
+                            <i
+                              class="fa fa-graduation-cap counter-icon"
+                              aria-hidden="true"
+                            ></i
+                            ><span class="count-number">Robust</span>
+                            Transformer Implementation
+                          </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                          <div class="counter-box">
+                            <i
+                              class="fa fa-desktop counter-icon"
+                              aria-hidden="true"
+                            ></i
+                            ><span class="count-number">WebDev</span>
+                            Flask-Based Web Application
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <figure class="about-img animate" data-animate="fadeInUp">
+                      <img
+                        src="static/images/CancerVisionAI.png"
+                        class="rounded"
+                        alt=""
+                      />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section animated-row" data-section="slide03">
+        <div class="section-inner">
+          <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+              <div class="title-block animate" data-animate="fadeInUp">
+                <span>Transformer Model</span>
+                <h2>Click below to access!</h2>
+              </div>
+              <div class="services-section">
+                <div class="services-list owl-carousel">
+                  <div class="item animate" data-animate="fadeInUp">
+                    <a href="/detection" class="portfolio-link">
+                      <div class="service-box">
+                        <span class="service-icon"
+                          ><i class="fa fa-bookmark" aria-hidden="true"></i
+                        ></span>
+                        <h3>Tumor Prediction</h3>
+                        <p>
+                          Upload your INBreast Mammograms and find out if you're
+                          at risk.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section animated-row" data-section="slide04">
+        <div class="section-inner">
+          <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+              <div class="title-block animate" data-animate="fadeInUp">
+                <h2>Feel Free to Connect Now!</h2>
+                <p>Project Developer/Head | Affiliated Society/DeveloperClub</p>
+              </div>
+              <div class="gallery-section row justify-content-center">
+                <div class="gallery-list owl-carousel">
+                  <div class="item animate" data-animate="fadeInUp">
+                    <a
+                      href="https://www.linkedin.com/in/muhammad-haris-a86360291/"
+                      class="portfolio-link"
+                    >
+                      <div class="portfolio-item">
+                        <div class="thumb">
+                          <img src="static/images/Harris.png" alt="" />
+                        </div>
+                        <div
+                          class="thumb-inner animate"
+                          data-animate="fadeInUp"
+                        >
+                          <h4>Muhammad Haris</h4>
+                          <p>
+                            Comp Sci Undergrad from Ghulam Ishaq Khan Institute
+                            of Engineering Sciences and Technology, Pakistan.
+                            Passionate about ML/DL, WebDev and Computer Vision
+                            Research.<br />
+                            Click for Profile!
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item animate" data-animate="fadeInUp">
+                    <a
+                      href="https://www.instagram.com/gdgoc_giki/"
+                      class="portfolio-link"
+                    >
+                      <div class="portfolio-item">
+                        <div class="thumb">
+                          <img src="static/images/GDGOCGIKI.png" alt="" />
+                        </div>
+                        <div
+                          class="thumb-inner animate"
+                          data-animate="fadeInUp"
+                        >
+                          <h4>GDGoC GIKI</h4>
+                          <p>
+                            The Google Developers Student Club is a vibrant,
+                            student-run community proudly supported by Google,
+                            dedicated to fostering the next generation of
+                            developers.<br />Learn More
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/fullpage.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scrolloverflow.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.inview.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+  </body>
+</html>
