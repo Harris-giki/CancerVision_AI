@@ -119,31 +119,14 @@
             </div>
            
             <div class="text-center">
-              <!-- Button to trigger file input -->
-              <button type="button" class="btn btn-primary" id="uploadButton">
-                Upload Image
-              </button>
-            
-              <!-- Hidden file input -->
-              <form
-                id="uploadForm"
-                action="/predict"
-                method="POST"
-                enctype="multipart/form-data"
-              >
-                <input
-                  type="file"
-                  id="fileInput"
-                  name="file"
-                  accept="image/*"
-                  style="display: none"
-                />
-                <!-- Display selected file name -->
+              <form id="uploadForm" action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+                <button type="button" class="btn btn-primary" id="uploadButton">
+                  UPLOAD IMAGE
+                </button>
+                <input type="file" id="fileInput" name="file" accept="image/*" style="display: none" />
                 <div id="fileName" style="margin-top: 10px;"></div>
-            
-                <!-- Submit button -->
                 <button type="submit" id="submitBtn" class="btn btn-primary" style="display: none;">
-                  Predict
+                  PREDICT
                 </button>
               </form>
             </div>

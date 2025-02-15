@@ -35,16 +35,20 @@ images.forEach((img) => {
 
 
 // Automatically submit the form after files are selected
-document.getElementById("uploadButton").addEventListener("click", function () {
-    document.getElementById("fileInput").click();
-  });
+document.addEventListener('DOMContentLoaded', function() {
+    const uploadButton = document.getElementById('uploadButton');
+    const fileInput = document.getElementById('fileInput');
+    const fileName = document.getElementById('fileName');
+    const submitBtn = document.getElementById('submitBtn');
 
-  // Handle file selection and display the file name
-  document.getElementById("fileInput").addEventListener("change", function (event) {
-    const files = event.target.files;
-    if (files.length > 0) {
-      const fileName = files[0].name;
-      document.getElementById("fileName").textContent = `File uploaded: ${fileName}`;
-      document.getElementById("submitBtn").style.display = "inline-block"; // Show the submit button
-    }
-  });
+    uploadButton.addEventListener('click', function() {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            fileName.textContent = `Selected file: ${this.files[0].name}`;
+            submitBtn.style.display = 'inline-block';
+        }
+    });
+});
