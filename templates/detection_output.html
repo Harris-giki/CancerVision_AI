@@ -63,20 +63,19 @@
       <header id="header">
         <div class="container-fluid">
           <div class="navbar">
-            <a href="{{ url_for('home') }}" id="logo" title="XAI">CANCERVISON AI</a>
+            <a href="{{ url_for('home') }}" id="logo" title="XAI"
+              >CANCERVISON AI</a
+            >
             <div class="navigation-row">
               <nav id="navigation">
                 <button type="button" class="navbar-toggle">
                   <i class="fa fa-bars"></i>
                 </button>
                 <div class="nav-box navbar-collapse">
-                  <ul class="navigation-menu nav navbar-nav navbars" id="nav">
-                    <li data-menuanchor="slide01" class="active">
-                      <a href="#slide01">Home</a>
-                    </li>
-                
-                    
-                  </ul>
+                  <ul
+                    class="navigation-menu nav navbar-nav navbars"
+                    id="nav"
+                  ></ul>
                 </div>
               </nav>
             </div>
@@ -94,13 +93,13 @@
         <div class="section animated-row" data-section="slide01">
           <div class="section-inner">
             <div class="welcome-box">
-              <h3 class="welcome-title animate" data-animate="fadeInUp">{{ result }}</h3>
-                <p></p>
+              <h3 class="welcome-title animate" data-animate="fadeInUp">
+                {{ result }}
+              </h3>
+              <p></p>
               <div class="text-center">
                 <a href="/" class="btn btn-primary">Go back</a>
               </div>
-            
-              
             </div>
           </div>
         </div>
@@ -115,7 +114,5 @@
     <script src="{{ url_for('static', filename='js/jquery.inview.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/form.js') }}"></script>
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
-
-    
   </body>
 </html>
