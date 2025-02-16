@@ -7,7 +7,8 @@ import io
 import os
 
 app = Flask(__name__)
-
+port = int(os.environ.get("PORT", 8000))  # Use PORT from environment
+    app.run(host='0.0.0.0', port=port)
 # Define the SwinBlock class (from swint_v2.py)
 class SwinBlock(nn.Module):
     def __init__(self, dim, input_resolution, num_heads, window_size=7, mlp_ratio=4.0, dropout=0.0):
