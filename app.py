@@ -7,8 +7,7 @@ import io
 import os
 
 app = Flask(__name__)
- port = int(os.environ.get("PORT", 8000))  # Default to 10000
-    app.run(host='0.0.0.0', port=port)
+
 # Define the SwinBlock class (from swint_v2.py)
 class SwinBlock(nn.Module):
     def __init__(self, dim, input_resolution, num_heads, window_size=7, mlp_ratio=4.0, dropout=0.0):
@@ -105,8 +104,8 @@ def preprocess_image(image):
     image = transform(image).unsqueeze(0)
     return image
 
-# Load the model
-model_path = 'model.pth'
+# Load the model (Ensure 'model.pth' is placed correctly)
+model_path = os.path.join(os.getcwd(), 'model.pth')
 model = load_model(model_path)
 
 @app.route('/')
@@ -142,4 +141,6 @@ def predict():
         return f'Error processing image: {str(e)}', 500
 
 if __name__ == '__main__':
-    app.run()
+    # ✅ Ensure Render uses the correct port and listens on 0.0.0.0
+    port = int(os.environ.get("PORT", 10000))  # Default to 10000
+    app.run(host='0.0.0.0', port=port)
