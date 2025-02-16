@@ -169,3 +169,10 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 For questions, feedback, or support, please contact:  
 
 **Harris**: [harris.giki@gmail.com](mailto:harris.giki@gmail.com)  
+
+## 🏆 Acknowledgments  
+
+- **Swin Transformer V2**: The model architecture is based on the Swin Transformer V2 paper.  
+- **PyTorch**: The deep learning framework used for training and inference.  
+- **Flask**: The web framework used for deployment.  
+- **Ayana et al.**: For their groundbreaking research on Vision Transformers for mammogram classification.  
