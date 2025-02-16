@@ -6,3 +6,4 @@ torch==2.1.0
 torchvision==0.16.0
 torchaudio==2.1.0
 gunicorn
+Pillow==10.3.0
