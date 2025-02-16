@@ -14,12 +14,10 @@ CancerVision AI is a state-of-the-art web application that leverages the **Swin 
 - [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Model Performance](#model-performance)
 - [Project Structure](#project-structure)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ---
@@ -122,16 +120,27 @@ The implemented Swin Transformer model demonstrates exceptional performance metr
 ## 📂 Project Structure
 CancerVision-AI/
 ├── app.py                  # Flask application for serving predictions
+
 ├── swint_v2.py             # Swin Transformer V2 model definition and training script
+
 ├── model.pth               # Pre-trained model weights
+
 ├── requirements.txt        # List of dependencies
+
 ├── static/                 # Static files (CSS, JS, etc.)
+
 │   └── styles.css          # Custom styles for the web interface
+
 ├── templates/              # HTML templates for the Flask app
+
 │   ├── index.html          # Home page
+
 │   ├── detection.html      # Image upload page
+
 │   └── detection_output.html # Prediction result page
+
 ├── README.md               # Project documentation
+
 └── .gitignore              # Files to ignore in Git
 
 ## 🚀 Deployment
