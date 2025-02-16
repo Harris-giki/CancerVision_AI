@@ -1,11 +1,9 @@
 # CancerVision AI 🔬
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+CancerVision AI is a state-of-the-art web application that leverages Swin V2 Vision Transformer (ViT) architecture for accurate breast cancer tumor classification (among Maligant and Benign Tumours). Built on research-backed methodologies, it provides medical professionals with a reliable tool for distinguishing between benign and malignant tumors in mammogram images.
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-v1.10+-red.svg)
 ![Framework](https://img.shields.io/badge/Framework-Flask-green.svg)
-
-CancerVision AI is a state-of-the-art web application that leverages Swin V2 Vision Transformer (ViT) architecture for accurate breast cancer tumor classification (among Maligant and Benign Tumours). Built on research-backed methodologies, it provides medical professionals with a reliable tool for distinguishing between benign and malignant tumors in mammogram images.
 
 ## 📋 Table of Contents
 - [Overview](#overview)
