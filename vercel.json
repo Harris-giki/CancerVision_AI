@@ -1,4 +1,12 @@
 {
+  "build": {
+    "env": {
+      "PYTHON_VERSION": "3.10"
+    }
+  }
+}
+
+{
   "version": 2,
   "builds": [
     {
